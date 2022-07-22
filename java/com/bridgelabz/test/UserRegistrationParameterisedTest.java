@@ -1,15 +1,17 @@
 package com.bridgelabz.test;
 
-import com.beust.jcommander.Parameterized;
 import com.bridgelabz.junit.ValidateUserRegistration;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runners.Parameterized;
-
+import java.util.*;
 import java.util.Arrays;
 import java.util.Collection;
 
+
+@RunWith(Parameterized.class)
 public class UserRegistrationParameterisedTest {
     public String testEmail;
     public String expectedResult;
